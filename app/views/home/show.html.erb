@@ -1,8 +1,10 @@
+<h2>投稿フォーム</h2>
 <%= form_with model: Post.new do |form| %>
   <%= form.text_field :content %>
   <%= form.submit %>
 <% end %>
 
+<h2>新着投稿</h2>
 <ul>
   <%- @posts.find_each do |post| %>
     <li>
